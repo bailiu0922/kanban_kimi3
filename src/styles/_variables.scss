@@ -1,0 +1,106 @@
+// ============================================================
+// FocusFlow 设计 Tokens（统一视觉规范）
+// 组件中统一通过 var(--xxx) 引用，保证浅色/深色主题一致切换
+// ============================================================
+
+$font-family:
+  -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+  'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+
+$breakpoint-mobile: 768px;
+
+:root {
+  // 基础色板（浅色主题，蓝绿主色）
+  --color-bg: #f4f6fb;
+  --color-surface: #ffffff;
+  --color-surface-2: #f1f5f9;
+  --color-text: #1f2937;
+  --color-text-muted: #64748b;
+  --color-border: #e2e8f0;
+
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-primary-soft: #dbeafe;
+
+  --color-danger: #dc2626;
+  --color-danger-soft: #fee2e2;
+
+  // 番茄钟阶段色
+  --color-focus: #ef4444;
+  --color-focus-soft: #fee2e2;
+  --color-break: #16a34a;
+  --color-break-soft: #dcfce7;
+
+  // 看板列标识色
+  --color-todo: #3b82f6;
+  --color-doing: #f59e0b;
+  --color-done: #22c55e;
+
+  // 热力图色阶（GitHub 绿）
+  --heat-0: #ebedf0;
+  --heat-1: #9be9a8;
+  --heat-2: #40c463;
+  --heat-3: #30a14e;
+  --heat-4: #216e39;
+
+  // 圆角
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  // 间距
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  // 阴影
+  --shadow-sm: 0 1px 2px rgb(15 23 42 / 0.06);
+  --shadow-md: 0 4px 12px rgb(15 23 42 / 0.08);
+  --shadow-lg: 0 12px 32px rgb(15 23 42 / 0.16);
+
+  // 动效
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.25s ease;
+
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --color-bg: #0f172a;
+  --color-surface: #1e293b;
+  --color-surface-2: #273549;
+  --color-text: #e2e8f0;
+  --color-text-muted: #94a3b8;
+  --color-border: #334155;
+
+  --color-primary: #3b82f6;
+  --color-primary-hover: #60a5fa;
+  --color-primary-soft: #1e3a5f;
+
+  --color-danger: #f87171;
+  --color-danger-soft: #4c1d1d;
+
+  --color-focus: #f87171;
+  --color-focus-soft: #4c1d1d;
+  --color-break: #4ade80;
+  --color-break-soft: #14532d;
+
+  --color-todo: #60a5fa;
+  --color-doing: #fbbf24;
+  --color-done: #4ade80;
+
+  --heat-0: #1e293b;
+  --heat-1: #0e4429;
+  --heat-2: #006d32;
+  --heat-3: #26a641;
+  --heat-4: #39d353;
+
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.3);
+  --shadow-md: 0 4px 12px rgb(0 0 0 / 0.35);
+  --shadow-lg: 0 12px 32px rgb(0 0 0 / 0.5);
+
+  color-scheme: dark;
+}
